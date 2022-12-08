@@ -1,0 +1,47 @@
+.interest-form {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.interest-form__input {
+  width: 299px;
+  height: 40px;
+  padding-left: 14px;
+}
+
+.interest-form__button {
+  width: 172px;
+  height: 40px;
+  background: $button-color;
+  color: $text-color;
+  border: none;
+  margin-left: 4px;
+  transition-property: border, color, outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  &:hover,
+  &:focus {
+    color: black;
+    border: 2px solid black;
+    outline: none;
+  }
+}
+
+.interest-form__title {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: calc(14px / 18px);
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.footer-block__image {
+  margin-top: 7px;
+}

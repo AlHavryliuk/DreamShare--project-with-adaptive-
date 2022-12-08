@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: "Monserat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 35px;
+  @include tablet {
+    font-size: 22px;
+  }
+
+  @include mobile {
+    font-size: 22px;
+  }
+}
+
+h4 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $text-color;
+}
+
+button {
+  border-radius: 40px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+}
+
+hr {
+  height: 2px;
+  background: #ff4e50;
+}

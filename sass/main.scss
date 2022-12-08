@@ -1,0 +1,22 @@
+@import "variables/variable";
+
+@import "utils/placeholder";
+@import "utils/mixins";
+@import "utils/is-hidden";
+@import "utils/animation";
+
+@import "base/minReset";
+@import "base/baseConfig";
+
+@import "components/container";
+@import "components/section";
+@import "components/header";
+@import "components/navigation-menu";
+@import "components/step-card";
+@import "components/circle-card";
+@import "components/buttons";
+@import "components/gallery";
+@import "components/interest-form";
+@import "components/footer-blocks";
+@import "components/footer-navigation";
+@import "components/popup";

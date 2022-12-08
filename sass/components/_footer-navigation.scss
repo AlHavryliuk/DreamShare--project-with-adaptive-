@@ -1,0 +1,28 @@
+.footer-navigation {
+  margin-left: 122px;
+
+  @include mobile {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  > li > h5 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: calc(17px / 14px);
+    color: black;
+    margin-bottom: 11px;
+  }
+
+  > li {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0px;
+   > a {
+    color: black;
+   }
+  }
+}

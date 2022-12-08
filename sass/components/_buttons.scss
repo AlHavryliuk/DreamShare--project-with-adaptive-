@@ -1,0 +1,17 @@
+.partners-button {
+  width: 180px;
+  height: 40px;
+  margin-top: 36px;
+  color: $button-color;
+  border: 2px solid $button-color;
+  background-color: transparent;
+  transition-property: border, color, outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  &:hover,
+  &:focus {
+    color: black;
+    border: 2px solid black;
+    outline: none;
+  }
+}

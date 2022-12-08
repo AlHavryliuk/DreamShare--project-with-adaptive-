@@ -1,0 +1,77 @@
+.header {
+  margin: 0 auto;
+  width: 100%;
+  background: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.1)),
+    url(../image/Background.png) no-repeat center;
+  background-size: cover;
+  > .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @include tablet {
+    width: 100%;
+    background: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.1)),
+      url(../image/Background__tablet.png) no-repeat;
+    background-size: cover;
+  }
+
+  @include mobile {
+    width: 100%;
+    background: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.1)),
+      url(../image/Background__mobile.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+.header__title {
+  margin-top: 156.7px;
+  font-weight: 700;
+  font-size: 52px;
+  text-align: center;
+  color: $text-color;
+  @include mobile {
+    margin-top: 26px;
+    font-size: 30px;
+  }
+}
+
+.header__subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 28.5px;
+  color: #f7f3f2;
+  @include mobile {
+    margin-top: 6px;
+    font-size: 18px;
+  }
+}
+
+.header__button {
+  height: 40px;
+  width: 225px;
+  border-radius: 40px;
+  background-color: $button-color;
+  font-family: "Montserrat";
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: $text-color;
+  margin: 45px 0 235px;
+  transition-property: border, color, outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  &:hover,
+  &:focus {
+    color: black;
+    border: 2px solid black;
+    outline: none;
+  }
+  @include mobile {
+    margin: 15px 0 153px;
+  }
+}

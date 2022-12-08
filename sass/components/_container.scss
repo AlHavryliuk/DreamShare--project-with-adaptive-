@@ -1,0 +1,16 @@
+.container {
+    width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+    font-family: 'Montserat';
+
+    @include tablet {
+        width: 768px;
+        padding: 10px;
+    }
+
+    @include mobile {
+        width: 320px;
+        padding: 10px;
+    }
+}

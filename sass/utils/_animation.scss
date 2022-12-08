@@ -1,0 +1,13 @@
+@keyframes openPopup {
+  0% {
+    scale: 0;
+  }
+
+  90% {
+    background-color: rgba(0, 0, 0, 0.603);
+  }
+  100% {
+    scale: 1;
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+}

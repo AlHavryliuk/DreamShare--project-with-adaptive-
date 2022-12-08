@@ -1,0 +1,89 @@
+.circle-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 19px;
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.subcircle {
+  content: "";
+  width: 32px;
+  height: 32px;
+  border: 4px solid white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  display: block;
+  background-color: red;
+}
+
+.circle-card__part {
+  grid-column-end: 1 span;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.circle-card__wrapper-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 17px;
+  transition-property: width;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  :hover {
+    width: 102%;
+  }
+
+  &-music::after {
+    @extend .subcircle;
+    background: url(../image/music.svg) no-repeat center red;
+  }
+  &-create::after {
+    @extend .subcircle;
+    background: url(../image/brush.svg) no-repeat center #979797;
+  }
+  &-camera::after {
+    @extend .subcircle;
+    background: url(../image/camera.svg) no-repeat center #ffa710;
+  }
+  &-airplane::after {
+    @extend .subcircle;
+    background: url(../image/airplane.svg) no-repeat center #667df3;
+  }
+
+  & > img {
+    border-radius: 50%;
+    position: absolute;
+  }
+}
+
+.circle-card__title {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(17px / 14px);
+  letter-spacing: 0px;
+  text-align: center;
+  color: black;
+  margin-bottom: 12px;
+}
+
+.circle-card__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: calc(14px / 14px);
+  text-align: center;
+}

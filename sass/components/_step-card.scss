@@ -1,0 +1,63 @@
+.step-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.before-template {
+  height: 20px;
+  width: 70px;
+  background: #ff4e50;
+  border-radius: 40px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: $text-color;
+  @extend %d-flex;
+}
+
+.step-card__part {
+  grid-column-end: 1 span;
+  height: 400px;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  padding: 25px 21px;
+
+  &:nth-of-type(1) {
+    background: url(../image/Step_1.png);
+    &::before {
+      content: "Step 1";
+      @extend .before-template;
+    }
+  }
+  &:nth-of-type(2) {
+    background: url(../image/Step_2.png);
+    &::before {
+      content: "Step 2";
+      @extend .before-template;
+    }
+  }
+  &:nth-of-type(3) {
+    background: url(../image/Step_3.png);
+    &::before {
+      content: "Step 3";
+      @extend .before-template;
+    }
+  }
+}
+
+.step-card__part-subtitle {
+  margin-top: 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: calc(14px / 14px);
+  letter-spacing: 0px;
+  color: #e3e3e3;
+}
